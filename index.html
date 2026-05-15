@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Samuel Ansah Sem | ANVIÉ STUDIO</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <!-- moving gradient waves background -->
+  <div class="gradient-waves" aria-hidden="true"></div>
+
+  <!-- subtle overlay so text reads perfectly -->
+  <div class="bg-overlay" aria-hidden="true"></div>
+
+  <!-- header (transparent, simple) -->
+  <header class="site-header">
+    <div class="brand">
+      <img src="logo.png" alt="ANVIÉ logo" class="logo">
+    </div>
+  </header>
+
+  <!-- centered hero -->
+  <main id="home" class="hero" role="main">
+    <div class="hero-center">
+
+      <div class="hero-intro">
+        <h1 class="hero-name">Samuel Ansah Sem <span class="brand-gold">| ANVIÉ STUDIO</span></h1>
+
+        <div class="typing-wrap" aria-live="polite">
+          <span class="typed" id="typed"></span>
+          <span class="typed-cursor">|</span>
+        </div>
+
+        <p class="hero-tagline">
+          “Every brand has a story — I turn that story into an experience the world can feel.
+          Where creativity meets soul — that’s where ANVIÉ begins.”
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#portfolio">View Portfolio</a>
+          <a class="btn ghost" href="#contact">Hire Me</a>
+        </div>
+      </div>
+
+      <!-- 3D profile card -->
+      <aside class="profile-card" aria-hidden="true">
+        <div class="card-inner">
+          <img src="profile.jpg" alt="Samuel Ansah" class="profile-photo">
+          <h3>Samuel Ansah Sem</h3>
+          <p class="muted">Advertiser • Brand Strategist • Filmmaker • Graphic Designer • Photographer • </p>
+          <p class="small">ANVIÉ — creative leadership with heart.</p>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- About / Skills / Portfolio / Contact -->
+  <section id="about" class="panel container">
+    <h2>About ANVIÉ</h2>
+    <p class="lead">ANVIÉ is the creative expression of Samuel — an advertiser, entrepreneur and Graphic Designer crafting campaigns and experiences that move people. I combine strategy, motion and design to tell stories that convert and inspire.</p>
+
+    <div class="cards">
+      <div class="card"><h4>Entrepreneur</h4><p>Building brands and scalable experiences.</p></div>
+      <div class="card"><h4>Advertiser</h4><p>Campaign strategy, visual storytelling & impact.</p></div>
+      <div class="card"><h4>Graphic Designer</h4><p>Visual identity, print & digital design.</p></div>
+       <div class="card"><h4>Artist</h4><p>Creative expression through various mediums.</p></div>
+        <div class="card"><h4>Product Designer</h4><p>Designing user-centered products and experiences.</p></div>
+    </div>
+  </section>
+
+  <section id="skills" class="panel dark-panel">
+    <div class="container">
+      <h2>Core Skills</h2>
+      <div class="skills-grid">
+        <div class="skill"><label>Adobe Suite</label><div class="bar"><div style="width:96%"></div></div></div>
+        <div class="skill"><label>Figma</label><div class="bar"><div style="width:92%"></div></div></div>
+        <div class="skill"><label>Blender</label><div class="bar"><div style="width:45%"></div></div></div>
+        <div class="skill"><label>After Effects</label><div class="bar"><div style="width:70%"></div></div></div>
+        <div class="skill"><label>Premiere Pro</label><div class="bar"><div style="width:86%"></div></div></div>
+        <div class="skill"><label>UI / UX</label><div class="bar"><div style="width:90%"></div></div></div>
+        <div class="skill"><label>Branding</label><div class="bar"><div style="width:96%"></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="panel">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <p class="lead">Selected works — branding, motion, and product experiences. Click to enlarge.</p>
+
+      <div class="grid">
+        <div class="grid-item"><img src="work1.jpg" alt="Work 1" data-title="Project 1" data-desc="Brand campaign & motion"></div>
+        <div class="grid-item"><img src="work2.jpg" alt="Work 2" data-title="Project 2" data-desc="UI / UX product design"></div>
+        <div class="grid-item"><img src="work3.jpg" alt="Work 3" data-title="Project 3" data-desc="3D render & packaging"></div>
+        <div class="grid-item"><img src="work4.jpg" alt="Work 4" data-title="Project 4" data-desc="Video ad & edit"></div>
+        <div class="grid-item"><img src="work5.jpg" alt="Work 5" data-title="Project 5" data-desc="Event & experiential"></div>
+        <div class="grid-item"><img src="work6.jpg" alt="Work 6" data-title="Project 6" data-desc="Campaign identity"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel quote-panel">
+    <div class="container">
+      <blockquote>“Creativity that serves a purpose is the only creativity worth having.”</blockquote>
+      <p class="muted">— Samuel Ansah Sem</p>
+    </div>
+  </section>
+
+  <section id="contact" class="panel dark-panel">
+    <div class="container">
+      <h2>Contact</h2>
+      <p class="lead">Ready to craft something memorable? Let's talk.</p>
+
+      <form id="contactForm" class="contact-form" novalidate>
+        <input name="name" placeholder="Your name" required>
+        <input name="email" type="email" placeholder="Your email" required>
+        <textarea name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Send Message</button>
+          <button class="btn ghost" id="musicToggle" type="button">Music: On</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- lightbox -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button id="lbClose" class="lb-close" aria-label="Close">×</button>
+    <div class="lb-content">
+      <img id="lbImg" src="" alt="">
+      <div class="lb-meta">
+        <h3 id="lbTitle"></h3>
+        <p id="lbDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025-2026 ANVIÉ — Samuel Ansah Sem · Advertiser • Brand Strategist • Graphic Designer • Photographer • Videographer • Artist • Product Designer </p>
+    </div>
+  </footer>
+
+  <!-- audio -->
+  <audio id="bgMusic" preload="auto" loop>
+    <source src="anvie.mp3" type="audio/mpeg">
+  </audio>
+
+</body>
+</html>
